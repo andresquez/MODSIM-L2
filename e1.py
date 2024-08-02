@@ -6,7 +6,7 @@ x1, x2, x3 = sp.symbols('x1 x2 x3')
 
 # Definir el sistema de ecuaciones
 F1 = 3*x1 - sp.cos(x2*x3) - 1/2
-F2 = 2*x1 - 81*(x2 + 0.1)**2 + sp.sin(x3) + 1.06
+F2 = x1**2 - 81*(x2 + 0.1)**2 + sp.sin(x3) + 1.06
 F3 = sp.exp(-x1*x2) + 20*x3 + (10*sp.pi - 3)/3
 
 # Crear la matriz Jacobiana
